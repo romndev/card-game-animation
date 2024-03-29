@@ -31,7 +31,7 @@ main{
 .card{
     width: 100%;
     perspective: 1000px;
-    transition: top 1s ease 1s, left 1s ease 1s, width 1s ease 1s, height 1s ease 1s;
+    transition: transform 1s ease 1s;
 }
 
 .card::after{
@@ -85,7 +85,7 @@ main{
 .card.opened .card-wrapper {
     transform: rotateY(180deg);
 }
-.card.moving {
+.moving {
     animation: open 2s ease;
 }
 .card.stacked{
@@ -147,12 +147,6 @@ main{
 @media only screen and (max-width: 500px) {
     body{
         font-size: 12px;
-    }
-    #top{
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-    .playground {
-        --card-zoom-coef: 1.8;
     }
 }
 
