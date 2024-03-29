@@ -1,3 +1,3 @@
 # card-game-animation
 
-DEMO: https://romndev.github.io/card-game-animation/
+https://romndev.github.io/card-game-animation/
